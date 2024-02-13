@@ -1,3 +1,5 @@
+@import "reset.css";
+@import "fonts.css";
 body {
     margin: 20px;
     }
@@ -8,10 +10,6 @@ a {
     text-decoration: none;
     color: black;
 }
-img {
-    max-width:100%;
-    height: auto;
-  }
 .container {
     max-width: 1230px;
     margin: 0 auto;
