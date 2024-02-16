@@ -1,0 +1,14 @@
+.footer .info {
+    padding: 0.5rem;
+    width: 100%;
+    }
+.footer {
+    margin-top: 2rem;
+}
+
+.top {
+    border-bottom: #101010 solid 1px;
+}
+.nav-link {
+    margin: 0.5rem;
+}

@@ -1,0 +1,81 @@
+   .projects-section {
+        padding: 3%;
+    }
+    .title {
+        margin-bottom: 45px;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        }
+    .subtitle {
+        margin-bottom: 90px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 1;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-align: center;
+        }
+    .projects-section .inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        }
+    .projects-section .inner > * {
+        flex-shrink: 0;
+        width: 32%;
+        margin-bottom: 30px;
+    }   
+    .project-card {
+        max-width: 375px;
+        border-radius: 1.2rem;
+        background-color: white;
+        box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        }
+    .content {
+        padding: 1rem;
+    }
+    .project-card .name {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 1;
+        color: #000000;
+        margin-bottom: 15px;
+        }
+    .project-card .desc {
+        font-weight: 300;
+        line-height: 1.4;
+        margin-bottom: 12px;
+        }
+    .project-card .stack {
+        font-weight: 300;
+        font-size: 14px;
+        color: #42446E;
+        margin-bottom: 20px;
+        }
+    .project-card .stack b {
+        font-weight: 400;
+        }
+    .project-card .actions {
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        }
+    .project-card .actions .link {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 1;
+        text-decoration: underline;
+        color: #000000;
+        }
+    .project-card .actions .icon {
+        width: 20px;
+        flex-shrink: 0;
+        margin-right: 10px;
+        }
+
+        

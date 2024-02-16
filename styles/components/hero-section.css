@@ -1,0 +1,18 @@
+.hero-section{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto;
+    padding: 2rem;
+} 
+.hero-section .hero_photo {
+    grid-area: 1/ 2/ 2/ 3;
+    border-radius: 50%;
+    flex-shrink: 0;
+    border: #42446E solid 3px;
+} 
+.hero-section  h1 {
+grid-area: 1/ 1/ 2/ 2;
+display: flex;
+justify-self: center;
+align-self: center; 
+}
