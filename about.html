@@ -2,27 +2,40 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale">
         <title>About</title>
         <link rel="stylesheet" href="./styles/index_style.css">
       </head>
       <body>
+
         <div class="container">
             <header class="header">
+              <div class="overlay"></div>
                 <a href="index.html" class="main_logo link-area">
                     <img src="./src/img/logos/SvgjsSvg1015.png" class="main_logo pic">
                 </a>
-                <ul class="nav_btn">
-                    <li class="nav-item"><a href="./index.html" class="btn btn-light" >Home</a></li>
-                    <li class="nav-item"><a href="./about.html" class="btn btn-dark">About</a></li>
-                    <li class="nav-item"><a href="./tech_stack.htm" class="btn btn-light">Tech Stack</a></li>
-                    <li class="nav-item"><a href="./project.html" class="btn btn-light">Projects</a></li>
-                    <li class="nav-item"><a href="./contact.html" class="btn btn-light">Contact</a></li>
-                    <li class="nav-item"><a href="./answer.html" class="btn btn-light">Answer</a></li>
-                    <li class="nav-item"><a href="https://github.com/" class="btn btn-light"><img src="./src/img/logos/Vector_GIT.png"></a></li>
-                    <li class="nav-item"><a href="https://twitter.com/" class="btn btn-light"><img src="./src/img/logos/Vector_twit.png"></a></li>
-                    <li class="nav-item"><a href="https://www.linkedin.com/" class="btn btn-light"><img src="./src/img/logos/Vector_in.png"></a></li>
-                </ul>
+                <nav class="nav">
+                  <ul class="nav_btn">
+                      <li class="nav-item"><a href="./index.html" class="btn btn-light" >Home</a></li>
+                      <li class="nav-item"><a href="./about.html" class="btn btn-dark">About</a></li>
+                      <li class="nav-item"><a href="./tech_stack.htm" class="btn btn-light">Tech Stack</a></li>
+                      <li class="nav-item"><a href="./project.html" class="btn btn-light">Projects</a></li>
+                      <li class="nav-item"><a href="./contact.html" class="btn btn-light">Contact</a></li>
+                      <li class="nav-item"><a href="./answer.html" class="btn btn-light">Answer</a></li>
+                      <li>
+                        <ul class="link_list">
+                            <li class="nav-item"><a href="https://github.com/" class="btn btn-light"><img src="./src/img/logos/Vector_GIT.png"></a></li>
+                            <li class="nav-item"><a href="https://twitter.com/" class="btn btn-light"><img src="./src/img/logos/Vector_twit.png"></a></li>
+                            <li class="nav-item"><a href="https://www.linkedin.com/" class="btn btn-light"><img src="./src/img/logos/Vector_in.png"></a></li>
+                        </ul>
+                    </li>
+                  </ul>
+              </nav>
+              <button class="nav-btn">
+                  <span class="nav-btn-line"></span>
+                  <span class="nav-btn-line"></span>
+                  <span class="nav-btn-line"></span>
+              </button>
             </header>
           <div class="about_me">
             <div class="about_text">
@@ -104,5 +117,6 @@
                 </ul>
             </div>
         </footer>
+        <script src="main.js"></script>   
     </body>
   </html>

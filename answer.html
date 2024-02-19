@@ -2,27 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale">
         <title>About</title>
         <link rel="stylesheet" href="./styles/index_style.css">
   </head>
   <body>
     <div class="container">
       <header class="header">
+      <div class="overlay"></div>
         <a href="index.html" class="main_logo link-area">
           <img src="./src/img/logos/SvgjsSvg1015.png" class="main_logo pic">
         </a>
-        <ul class="nav_btn">
-          <li class="nav-item"><a href="./index.html" class="btn btn-light" >Home</a></li>
-          <li class="nav-item"><a href="./about.html" class="btn btn-light">About</a></li>
-          <li class="nav-item"><a href="./tech_stack.htm" class="btn btn-light">Tech Stack</a></li>
-          <li class="nav-item"><a href="./project.html" class="btn btn-light">Projects</a></li>
-          <li class="nav-item"><a href="./contact.html" class="btn btn-light">Contact</a></li>
-          <li class="nav-item"><a href="./answer.html" class="btn btn-dark">Answer</a></li>
-          <li class="nav-item"><a href="https://github.com/" class="btn btn-light"><img src="./src/img/logos/Vector_GIT.png"></a></li>
-          <li class="nav-item"><a href="https://twitter.com/" class="btn btn-light"><img src="./src/img/logos/Vector_twit.png"></a></li>
-          <li class="nav-item"><a href="https://www.linkedin.com/" class="btn btn-light"><img src="./src/img/logos/Vector_in.png"></a></li>
-        </ul>
+        <nav class="nav">
+            <ul class="nav_btn">
+                <li class="nav-item"><a href="./index.html" class="btn btn-light" >Home</a></li>
+                <li class="nav-item"><a href="./about.html" class="btn btn-light">About</a></li>
+                <li class="nav-item"><a href="./tech_stack.htm" class="btn btn-light">Tech Stack</a></li>
+                <li class="nav-item"><a href="./project.html" class="btn btn-light">Projects</a></li>
+                <li class="nav-item"><a href="./contact.html" class="btn btn-light">Contact</a></li>
+                <li class="nav-item"><a href="./answer.html" class="btn btn-dark">Answer</a></li>
+                <li>
+                  <ul class="link_list">
+                      <li class="nav-item"><a href="https://github.com/" class="btn btn-light"><img src="./src/img/logos/Vector_GIT.png"></a></li>
+                      <li class="nav-item"><a href="https://twitter.com/" class="btn btn-light"><img src="./src/img/logos/Vector_twit.png"></a></li>
+                      <li class="nav-item"><a href="https://www.linkedin.com/" class="btn btn-light"><img src="./src/img/logos/Vector_in.png"></a></li>
+                  </ul>
+              </li>
+            </ul>
+        </nav>
+        <button class="nav-btn">
+            <span class="nav-btn-line"></span>
+            <span class="nav-btn-line"></span>
+            <span class="nav-btn-line"></span>
+        </button>
       </header>
     </div>
     
@@ -134,6 +146,51 @@
                         вторинної (перпендикулярної до головної)осі контейнера. Основні значення властивості: -stretch, -baseline, -center, flex-start,
                         -flex-end.
             </p>
+
+            <h1 class="title">Lab 3</h1>
+            <p>
+                  <br> <b> 1. За що відповідає стиль transition</b><br>
+                  Стиль transition в CSS використовується для плавних переходів між двома або більше станами елемента. 
+                  Він дозволяє анімувати зміни властивостей елемента, таких як колір, розмір, положення тощо, з плавним переходом від одного 
+                  стану до іншого.
+                  <br> <b> 2. Як задати напівпрозорий колір за допомогою css?</b><br>
+                  Щоб задати напівпрозорий колір за допомогою CSS, можна використати значення RGBA для кольору. 
+                  Наприклад: background-color: rgba(255, 0, 0, 0.5); задасть червоний колір з напівпрозорістю 50%.
+                  <br> <b> 3. Яким чином можна задати стилі для мобільних пристроїв?</b><br>
+                  Стилі для мобільних пристроїв можна задати за допомогою медіа-запитів (media queries). Наприклад:
+                  @media only screen and (max-width: 600px) {
+                        /* стилі для мобільних пристроїв */
+                        width: 48%;
+                        display: flex;
+                        align-items: center;
+                        font-size: 16px;
+                    }                    
+                  <br> <b> 4. За що відповідає css стиль opacity?</b><br>
+                  Стиль opacity в CSS використовується для встановлення прозорості елемента. Значення властивості може варіюватися 
+                  від 0 (повністю прозорий) до 1 (непрозорий).
+                  <br> <b> 5. За що відповідає стиль transform?</b><br>
+                  Стиль transform в CSS використовується для зміни форми, розміру та положення елемента. Він дозволяє виконувати різні 
+                  трансформації, такі як переміщення, обертання, масштабування тощо.
+                  <br> <b> 6. Як підключити js на сторінку?</b><br>
+                  Щоб підключити JavaScript на сторінку, використовуйте тег "script" у тілі HTML-документу або зовнішній файл JavaScript за 
+                  допомогою атрибута src.
+                  <br> <b>7. Для чого використовується мета тег meta name="viewport"? </b><br>
+                  Мета-тег meta name="viewport" використовується для налаштування параметрів відображення сторінки на мобільних пристроях, 
+                  таких як ширина, масштабування, ініціальне збільшення тощо.
+                  <br> <b> 8. Що робить наступна конструкція flex: 1 0 0%;?</b><br>
+                  Конструкція flex: 1 0 0%; встановлює для гнучкого елемента значення для flex-grow, flex-shrink та flex-basis. У цьому випадку, елемент буде розтягуватися, 
+                  але не буде зменшуватися, і його базовий розмір буде 0%.
+                  <br> <b> 9. Що робить наступний селектор .inner > *?</b><br>
+                  Селектор .inner > * вибирає всіх прямих дочірніх елементів .inner.
+                  <br> <b> 10. Чи відрзняється .header.is-active від .header .is-active?</b><br>
+                  .header.is-active вибирає елемент з класом is-active, який є дочірнім елементом .header. .header .is-active вибирає елемент з класом is-active, 
+                  який є вкладеним у елемент .header.
+                  <br> <b>11. Що робить наступна конструкція .form > *:not(:last-child)? </b><br>
+                  Конструкція .form > *:not(:last-child) вибирає всі дочірні елементи .form, крім останнього елемента.
+                  <br> <b> 12. Для чого використовується властивість order для flex елементів? </b><br>
+                  Властивість order для гнучких елементів flexbox визначає порядок їх розміщення в контейнері. Елементи з меншим значенням order поміщаються перед елементами 
+                  з більшим значенням order. За замовчуванням, всі елементи мають значення order: 0.
+            </p>
       </div>
 
     <footer class="footer">
@@ -154,5 +211,6 @@
         </ul>
       </div>
     </footer>
+    <script src="main.js"></script>   
   </body>
 </html>

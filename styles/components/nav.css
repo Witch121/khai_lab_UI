@@ -1,5 +1,4 @@
-
-    .nav .list .item .link {
+    .nav .nav_btn .nav-item .link {
     font-size: 20px;
     font-weight: 500;
     font-family: DM_Sans, sans-serif, Arial;
@@ -10,7 +9,7 @@
         justify-content: center;
         flex-wrap: wrap;
         padding-top: 1rem;
-        padding-bottom: 1rem;
+        padding-bottom: 4rem;
     }
     .nav_btn {
         display: flex;
@@ -22,6 +21,7 @@
         padding-right: 1rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
+        max-height: 20px;
     
     }
     .btn {
