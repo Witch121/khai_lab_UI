@@ -1,0 +1,11 @@
+.answers {
+    padding: 1.5rem;
+}
+.text_answer{
+    display: none;
+}
+.lab {
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}

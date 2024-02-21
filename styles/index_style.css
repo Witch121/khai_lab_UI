@@ -3,6 +3,7 @@
 @import "./common.css";
 @import "./components/header.css";
 @import "./components/project-card.css";
+@import "./components/select.css";
 @import "./components/nav.css";
 @import "./components/tech-logo.css";
 @import "./components/form.css";
@@ -11,3 +12,4 @@
 @import "./components/about.css";
 @import "./components/footer.css";
 @import "./components/title.css";
+@import "./components/answer.css";
