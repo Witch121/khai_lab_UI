@@ -1,7 +1,7 @@
 .work_exp .single {
     border-bottom: solid 1px #a7a7a7;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     text-wrap: nowrap;
     line-height: 1.5;
     margin-bottom: 1rem;
@@ -13,11 +13,6 @@
 .work_exp .single p {
     color: #A7A7A7;
 }
-.right {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-}
 .exp_time {
     background-color: #D7FFE0;
     border-radius: 1rem;
@@ -27,6 +22,10 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     color: #018C0F;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+
 }
 .general .work_exp{
     padding: 2rem;
@@ -42,4 +41,46 @@
 }
 .about_text h1{
     padding-bottom: 2rem;
+}
+.top_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.bottum_line {
+    display: flex;
+    flex-direction: row;
+    order: 2;
+    justify-content: space-between;
+}
+.edu_h2 {
+    font-size: 200%;
+}
+.edu_p {
+    color: #A7A7A7;
+}
+@media screen and (min-width: 768px) {
+
+}
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 150% !important;
+    }
+    .bottum_line p {
+        font-size: 80%;
+    }
+    .exp_time {
+        font-size: 80%;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .exp {
+        display: flex;
+        flex-direction: column;
+    }
+    .work_exp .single {
+        display: flex;
+        text-wrap: wrap !important;
+    }
 }

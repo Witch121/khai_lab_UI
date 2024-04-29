@@ -27,7 +27,7 @@
         margin-bottom: 30px;
     }   
     .project-card {
-        max-width: 375px;
+        /*max-width: 375px;*/
         border-radius: 1.2rem;
         background-color: white;
         box-shadow: 2px 2px 100px rgba(0, 0, 0, 0.2);
@@ -106,10 +106,20 @@
             .projects-section .inner > * {
             width: 48%;
             }
+            .project-card img {
+                width: 100%;
+            }
         }
     @media screen and (max-width: 768px) {
             .projects-section .inner > * {
             width: 100%;
+            }
+            .project-page .projects-section .filters {
+                display: block;
+                width: 100%;
+            }
+            .project-card img {
+                width: inherit;
             }
         }
     .big_article {

@@ -12,18 +12,22 @@
 .nav-link {
     margin: 0.5rem;
 }
-
+.tree_logos img {
+    max-height: 30px;
+    max-width: 30px;
+}
 @media screen and (max-width: 768px) {
     .info {
-        font-size: 12px;
+        font-size: 15px;
     }
     .info img {
         height: 80%;
     }
 }
 @media screen and (max-width: 480px) {
-    .info {
-        font-size: 10px;
+    .nav {
+        display: flex;
+        flex-direction: column;
     }
     .info img {
         height: 50%;

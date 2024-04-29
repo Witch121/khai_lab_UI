@@ -194,19 +194,25 @@ const data = [
         filtersForm.addEventListener('change', handleFormChange);
         dataRender(data, projectsContainer);
 
-            function columAppearance() {
-                const article = document.querySelector(".js-projects-container");
-                if (article.classList.contains('inner')) {
-                    oneColumn();
-                    } else {
-                    moreColumn();
-                    }
-                    function oneColumn () {
-                        article.classList.remove("inner");
-                        article.classList.add("big_article");
-                    }
-                    function moreColumn () {
-                        article.classList.add("inner");
-                        article.classList.remove("big_article");
-                    }
-                }
+        function oneColumn(article) {
+            article.classList.remove("inner");
+            article.classList.add("big_article");
+        }
+
+        function moreColumn(article) {
+            article.classList.add("inner");
+            article.classList.remove("big_article");
+        }
+        function columAppearance() {
+            const article = document.querySelector(".js-projects-container");
+            if (article.classList.contains('inner')) {
+                oneColumn(article);
+            } else {
+                moreColumn(article);
+            }
+        }
+        const project_btns = document.getElementsByClassName("project_btn");
+
+        for (let i = 0; i < project_btns.length; i++) {
+            project_btns[i].addEventListener("click", columAppearance);
+        }
